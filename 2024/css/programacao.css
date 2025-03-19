@@ -1,0 +1,33 @@
+.table td,
+.table th {
+  vertical-align: middle !important;
+}
+
+.td-bold {
+  font-weight: bold;
+}
+
+#dia1-tab,
+#dia2-tab {
+  box-shadow: unset;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  background: linear-gradient(45deg, #337dcc, #4fa6e0);
+}
+
+#tabhead {
+  color: white;
+  background: linear-gradient(45deg, #337dcc, #4fa6e0);
+}
+
+#dia2-tab:not(.active),
+#dia1-tab:not(.active),
+#dia3-tab:not(.active) {
+  color: #757575;
+  background: #ebeced;
+}
+
+#tabsections {
+  color: #633f18;
+  background: linear-gradient(135deg, #f38f32, #ffb563);
+}

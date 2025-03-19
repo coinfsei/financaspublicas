@@ -26,3 +26,12 @@ html {
 .container{
     max-width: 1350px;
 }
+
+
+
+.sofia-sans-condensed {
+  font-family: "Sofia Sans Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}

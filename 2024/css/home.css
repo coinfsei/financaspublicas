@@ -1,26 +1,135 @@
 #home {
-    background-image: url(../imgs/banner_pc_ft-100.jpg);
-    background-repeat: no-repeat;
+  background-image: url(../imgs/banner_pc_ft-100.jpg);
+  background-repeat: no-repeat;
+  justify-content: center;
+  /* padding: 0px 300px 0px 300px; */
+  flex-wrap: wrap;
 }
 
+.ilustracao {
+  margin: -20px 110px 0px 130px;
+  width: 410px;
+}
+
+.marca {
+  margin: 100px 100px 0px 100px;
+  width: 360px;
+}
+
+.banner {
+  height: 440px;
+  display: flex;
+  align-items: center;
+  /* Auto layout */
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px;
+  padding: 0px;
+  z-index: 1;
+  order: 0;
+  flex-wrap: wrap;
+}
 .hero {
-    /*     height: 100vh; */
-    background: #fff;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #fff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.evento-info,
+.evento-detalhes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.dataelocal {
+  border-top: 0.4vmin solid #f0626e;
+  margin-top: -50px;
+  padding: 8px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 10px;
+  flex-wrap: wrap;
+}
+
+.dia {
+  font-family: "Sofia Sans Condensed", serif;
+  color: #ffb563;
+  font-size: 20px;
+}
+.local {
+  font-family: "Sofia Sans Condensed", serif;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0px 5vw;
+
+  }
+  .evento-info {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .evento-detalhes {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .marca {
+    display: inline-block;
+    margin: 7.29vw 5.21vw 5.21vw 5.21vw;
+    width: 360px;
+    justify-content: space-around;
+  }
+
+  .ilustracao {
+    display: inline-block;
+    margin: 7.29vw 5.21vw 5.21vw 5.21vw;
+    width: 410px;
+    justify-content: space-around;
+  }
+
+  .dataelocal {
+    border-top: 0.4vmin solid #f0626e;
+    margin-top: -50px;
+    padding: 0vw 3.21vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0vw 10vw;
+    flex-wrap: wrap;
+  }
+
+  .dia {
+    font-family: "Sofia Sans Condensed", serif;
+    color: #ffb563;
+    font-size: 25px;
+    
+  }
 }

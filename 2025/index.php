@@ -20,11 +20,10 @@
     <?php include('./snippets/sobre.html'); ?>
 
     <!-- Sessão Submissão -->
-    <?php //include('./snippets/submissao.html'); 
-    ?>
+    <?php //include('./snippets/submissao.html'); ?>
 
     <!-- Sessão de Programação -->
-    <? //php include('./snippets/programacao.html'); ?>
+    <?php include('./snippets/programacao.html'); ?>
 
     <!-- Modal de Download -->
     <?php //include('./snippets/download.html'); ?>

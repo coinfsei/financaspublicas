@@ -34,19 +34,19 @@
     ?>
 
     <!-- Sessão de Programação -->
-    <?php include('./snippets/programacao.html'); ?>
+    <? //php include('./snippets/programacao.html'); ?>
 
     <!-- Modal de Download -->
-    <?php include('./snippets/download.html'); ?>
+    <?php //include('./snippets/download.html'); ?>
 
     <!-- Seção Palestrantes -->
-    <?php include('./snippets/palestrantes.html'); ?>
+    <?php //include('./snippets/palestrantes.html'); ?>
 
     <!-- Sessão dos Patrocinadores -->
-    <?php include('./snippets/patrocinio.html'); ?>
+    <?php //include('./snippets/patrocinio.html'); ?>
 
     <!-- Modal de Versões Anteriores -->
-    <?php include('./snippets/botao-flutuante.html'); ?>
+    <?php //include('./snippets/botao-flutuante.html'); ?>
 
     <!-- Footer -->
     <?php include('./snippets/rodape.html'); ?>

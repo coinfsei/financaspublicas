@@ -12,8 +12,8 @@
 }
 
 .marca {
-  margin: 100px 100px 0px 100px;
-  width: 360px;
+  margin: 100px 50px 30px 50px;
+  width: 400px;
 }
 
 .banner {
@@ -28,6 +28,21 @@
   z-index: 1;
   order: 0;
   flex-wrap: wrap;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .hero {
   background: #fff;
@@ -88,7 +103,6 @@
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 0px 5vw;
-
   }
   .evento-info {
     flex-direction: row;
@@ -103,7 +117,7 @@
   .marca {
     display: inline-block;
     margin: 7.29vw 5.21vw 5.21vw 5.21vw;
-    width: 360px;
+    width: 480px;
     justify-content: space-around;
   }
 
@@ -130,6 +144,5 @@
     font-family: "Sofia Sans Condensed", serif;
     color: #ffb563;
     font-size: 25px;
-    
   }
 }

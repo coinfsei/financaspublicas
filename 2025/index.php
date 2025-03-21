@@ -14,7 +14,7 @@
     <?php include('./snippets/navegacao.html'); ?>
 
     <!-- Sessão Home -->
-    <?php //include('./snippets/home.html'); ?>
+    <?php include('./snippets/home.html'); ?>
 
     <!-- Sessão Sobre -->
     <?php include('./snippets/sobre.html'); ?>

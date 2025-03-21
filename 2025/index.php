@@ -29,7 +29,7 @@
     <?php //include('./snippets/download.html'); ?>
 
     <!-- Seção Palestrantes -->
-    <?php //include('./snippets/palestrantes.html'); ?>
+    <?php include('./snippets/palestrantes.html'); ?>
 
     <!-- Sessão dos Patrocinadores -->
     <?php //include('./snippets/patrocinio.html'); ?>

@@ -1,0 +1,263 @@
+#icons {
+  position: absolute;
+  top: -45.5%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 42%;
+  overflow: hidden;
+  animation: FadeIn 3.1s ease-out;
+  user-select: none;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.icon {
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 70px;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-name: Float, FadeFloat;
+  z-index: 0;
+  position: relative;
+  /* Add this line */
+}
+
+.icon.Foreground {
+  height: 10%;
+  min-height: 20px;
+}
+
+.icon.Background {
+  height: 10% / 1.1;
+  min-height: 8px;
+  animation-duration: 40s;
+}
+
+@keyframes Float {
+  from {
+    transform: translateX(100%) translateZ(0);
+  }
+
+  to {
+    transform: translateX(-15%) translateZ(0);
+  }
+}
+
+/*
+@keyframes Float {
+  from { transform: translateX(100%) translateY(-100%) translateZ(0); }
+  50% { transform: translateX(55%) translateY(0) translateZ(0); }
+  to { transform: translateX(-5%) translateY(-100%) translateZ(0); }
+}
+*/
+@keyframes FadeFloat {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  5%,
+  55% {
+    opacity: 1;
+  }
+}
+
+.icon:nth-child(10) {
+  animation-delay: -160s;
+  top: -50%;
+}
+
+.icon.Foreground:nth-child(10) {
+  animation-duration: 100s;
+  height: 35%;
+}
+
+.icon.Background:nth-child(10) {
+  animation-duration: 52s;
+  height: -3.40909091%;
+}
+
+.icon:nth-child(9) {
+  animation-delay: -150s;
+  top: -100%;
+}
+
+.icon.Foreground:nth-child(9) {
+  animation-duration: 12s;
+  height: 32.5%;
+}
+
+.icon.Background:nth-child(9) {
+  animation-duration: 65s;
+  height: -2.15909091%;
+}
+
+.icon:nth-child(8) {
+  animation-delay: -130s;
+  top: -70%;
+}
+
+.icon.Foreground:nth-child(8) {
+  animation-duration: 44s;
+  height: 30%;
+}
+
+.icon.Background:nth-child(8) {
+  animation-duration: 64s;
+  height: -0.90909091%;
+}
+
+.icon:nth-child(7) {
+  animation-delay: -90s;
+  top: -50%;
+}
+
+.icon.Foreground:nth-child(7) {
+  animation-duration: 86s;
+  height: 27.5%;
+}
+
+.icon.Background:nth-child(7) {
+  animation-duration: 61s;
+  height: 0.34090909%;
+}
+
+.icon:nth-child(6) {
+  animation-delay: -80s;
+  top: -10%;
+}
+
+.icon.Foreground:nth-child(6) {
+  animation-duration: 33s;
+  height: 25%;
+}
+
+.icon.Background:nth-child(6) {
+  animation-duration: 63s;
+  height: 1.59090909%;
+}
+
+.icon:nth-child(5) {
+  animation-delay: -60s;
+  top: 25%;
+}
+
+.icon.Foreground:nth-child(5) {
+  animation-duration: 50s;
+  height: 22.5%;
+}
+
+.icon.Background:nth-child(5) {
+  animation-duration: 75s;
+  height: 2.84090909%;
+}
+
+.icon:nth-child(4) {
+  animation-delay: -40s;
+  top: 15%;
+}
+
+.icon.Foreground:nth-child(4) {
+  animation-duration: 52s;
+  height: 20%;
+}
+
+.icon.Background:nth-child(4) {
+  animation-duration: 67s;
+  height: 4.09090909%;
+}
+
+.icon:nth-child(3) {
+  animation-delay: -25s;
+  top: -5%;
+}
+
+.icon.Foreground:nth-child(3) {
+  animation-duration: 54s;
+  height: 17.5%;
+}
+
+.icon.Background:nth-child(3) {
+  animation-duration: 69s;
+  height: 5.34090909%;
+}
+
+.icon:nth-child(2) {
+  animation-delay: -15s;
+  top: 5%;
+}
+
+.icon.Foreground:nth-child(2) {
+  animation-duration: 56s;
+  height: 8%;
+}
+
+.icon.Background:nth-child(2) {
+  animation-duration: 71s;
+  height: 6.59090909%;
+}
+
+.icon:nth-child(1) {
+  animation-delay: -10s;
+  top: 30%;
+}
+
+.icon.Foreground:nth-child(1) {
+  animation-duration: 57s;
+  height: 12.5%;
+}
+
+.icon.Background:nth-child(1) {
+  animation-duration: 73s;
+  height: 7.84090909%;
+}
+
+.icon {
+  background-image: none;
+  font-family: "Font Awesome 5 Free";
+
+  &::before {
+    content: "\f698";
+    /* Ícone de matemática (fórmula) */
+    font-size: 60px;
+    color: #dddddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+}
+
+.icon.Background {
+  background-image: none;
+  font-family: "Font Awesome 5 Free";
+
+  &::before {
+    content: "\f1ec";
+    /* Ícone de matemática (fórmula) */
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+}

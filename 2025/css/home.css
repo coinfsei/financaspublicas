@@ -37,6 +37,7 @@
   background: linear-gradient(-90deg, #179d59, #179d8a, #2dadb3, #1cb378);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  overflow: hidden;
 }
 
 @keyframes gradient {
@@ -83,7 +84,7 @@
 }
 
 .dataelocal {
-  border-top: 0.4vmin solid #f0626e;
+  border-top: 0.4vmin solid #f2eee8;
   margin-top: -50px;
   padding: 8px 8px;
   display: flex;
@@ -143,7 +144,7 @@
   }
 
   .dataelocal {
-    border-top: 0.4vmin solid #f0626e;
+    border-top: 0.4vmin solid #3461ad;
     margin-top: -50px;
     padding: 0vw 3.21vw;
     display: flex;
@@ -156,7 +157,19 @@
 
   .dia {
     font-family: "Sofia Sans Condensed", serif;
-    color: #ffb563;
+    color: #ffc107;
     font-size: 25px;
   }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  z-index: 0;
+  opacity: 0.2;
+  mix-blend-mode: color-burn;
+  overflow: hidden;
 }

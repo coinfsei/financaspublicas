@@ -14,23 +14,23 @@
     <?php include('./snippets/navegacao.html'); ?>
 
     <!-- Sessão Home -->
-    <?php //include('./snippets/home.html'); ?>
+    <?php include('./snippets/home.html'); ?>
+    <?php //include('./snippets/animation.html'); ?>
 
     <!-- Sessão Sobre -->
     <?php include('./snippets/sobre.html'); ?>
 
     <!-- Sessão Submissão -->
-    <?php //include('./snippets/submissao.html'); 
-    ?>
+    <?php //include('./snippets/submissao.html'); ?>
 
     <!-- Sessão de Programação -->
-    <? //php include('./snippets/programacao.html'); ?>
+    <?php include('./snippets/programacao.html'); ?>
 
     <!-- Modal de Download -->
     <?php //include('./snippets/download.html'); ?>
 
     <!-- Seção Palestrantes -->
-    <?php //include('./snippets/palestrantes.html'); ?>
+    <?php include('./snippets/palestrantes.html'); ?>
 
     <!-- Sessão dos Patrocinadores -->
     <?php //include('./snippets/patrocinio.html'); ?>

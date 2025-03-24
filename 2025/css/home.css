@@ -9,11 +9,17 @@
 .ilustracao {
   margin: -20px 110px 0px 130px;
   width: 410px;
+  z-index: 1;
+  position: relative;
+  /* Add this line */
 }
 
 .marca {
-  margin: 100px 100px 0px 100px;
-  width: 360px;
+  margin: 100px 50px 30px 50px;
+  width: 400px;
+  z-index: 1;
+  position: relative;
+  /* Add this line */
 }
 
 .banner {
@@ -28,7 +34,26 @@
   z-index: 1;
   order: 0;
   flex-wrap: wrap;
+  background: linear-gradient(-90deg, #179d59, #179d8a, #2dadb3, #1cb378);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow: hidden;
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .hero {
   background: #fff;
   color: white;
@@ -59,7 +84,7 @@
 }
 
 .dataelocal {
-  border-top: 0.4vmin solid #f0626e;
+  border-top: 0.4vmin solid #f2eee8;
   margin-top: -50px;
   padding: 8px 8px;
   display: flex;
@@ -68,6 +93,9 @@
   align-items: center;
   gap: 0px 10px;
   flex-wrap: wrap;
+  z-index: 1;
+  position: relative;
+  /* Add this line */
 }
 
 .dia {
@@ -75,6 +103,7 @@
   color: #ffb563;
   font-size: 20px;
 }
+
 .local {
   font-family: "Sofia Sans Condensed", serif;
   color: #fff;
@@ -88,8 +117,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 0px 5vw;
-
   }
+
   .evento-info {
     flex-direction: row;
     justify-content: space-around;
@@ -103,7 +132,7 @@
   .marca {
     display: inline-block;
     margin: 7.29vw 5.21vw 5.21vw 5.21vw;
-    width: 360px;
+    width: 480px;
     justify-content: space-around;
   }
 
@@ -115,7 +144,7 @@
   }
 
   .dataelocal {
-    border-top: 0.4vmin solid #f0626e;
+    border-top: 0.4vmin solid #3461ad;
     margin-top: -50px;
     padding: 0vw 3.21vw;
     display: flex;
@@ -128,8 +157,19 @@
 
   .dia {
     font-family: "Sofia Sans Condensed", serif;
-    color: #ffb563;
+    color: #ffc107;
     font-size: 25px;
-    
   }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  z-index: 0;
+  opacity: 0.2;
+  mix-blend-mode: color-burn;
+  overflow: hidden;
 }

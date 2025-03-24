@@ -1,0 +1,487 @@
+#icons {
+  position: absolute;
+  top: -45.5%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 42%;
+  overflow: hidden;
+  animation: FadeIn 3.1s ease-out;
+  user-select: none;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.icon {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 70px;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-name: Float, FadeFloat;
+  position: relative;
+  background-image: none;
+  font-family: "Font Awesome 6 Free", sans-serif;
+}
+
+
+
+
+
+/* Base plano styles */
+.plano {
+  height: 10%;
+  min-height: 8px;
+  animation-duration: 40s;
+}
+
+/* Plano A icon */
+.icon.plano_a {
+
+  /* Font Awesome icon: Calculator (f698) */
+  &::before {
+    content: "\f698";
+    /* font-size: 50px; */
+    color: #f1f1db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+}
+
+/* Plano B icon */
+.icon.plano_b {
+
+  /* Font Awesome icon: Chart Line (f1ec) */
+  &::before {
+    content: "\f1ec";
+    /* font-size: 40px; */
+    color: #f1f1db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+}
+
+/* Plano C icon */
+.icon.plano_c {
+
+  /* Font Awesome icon: Chart Bar (f0ce) */
+  &::before {
+    content: "\f0ce";
+    /* font-size: 20px; */
+    color: #f1f1db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+}
+
+/* Plano D icon */
+.icon.plano_d {
+
+  /* Font Awesome icon: plus-minus (e43c) */
+  &::before {
+    content: "\e43c";
+    /* font-size: 20px; */
+    color: #f1f1db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+}
+
+/* Plano E icon */
+.icon.plano_e {
+
+  /* Font Awesome icon: divide (f529) */
+  &::before {
+    content: "\f529";
+    /* font-size: 20px; */
+    color: #f1f1db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+}
+
+@keyframes Float {
+  from {
+    transform: translateX(100%) translateZ(0);
+  }
+
+  to {
+    transform: translateX(-15%) translateZ(0);
+  }
+}
+
+/*
+@keyframes Float {
+  from { transform: translateX(100%) translateY(-100%) translateZ(0); }
+  50% { transform: translateX(55%) translateY(0) translateZ(0); }
+  to { transform: translateX(-5%) translateY(-100%) translateZ(0); }
+}
+*/
+@keyframes FadeFloat {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  5%,
+  55% {
+    opacity: 1;
+  }
+}
+
+/* grupo 1 */
+.icon:nth-child(1) {
+  animation-delay: -128s;
+  top: 50%;
+  font-size: 40px;
+  z-index: 1;
+}
+
+.icon.plano_a:nth-child(1),
+.icon.plano_b:nth-child(1),
+.icon.plano_c:nth-child(1),
+.icon.plano_d:nth-child(1),
+.icon.plano_e:nth-child(1) {
+  animation-duration: 30s;
+  height: 35%;
+}
+
+/* grupo 2 */
+.icon:nth-child(2) {
+  animation-delay: -120s;
+  top: -42%;
+  font-size: 35px;
+}
+
+.icon.plano_a:nth-child(2),
+.icon.plano_b:nth-child(2),
+.icon.plano_c:nth-child(2),
+.icon.plano_d:nth-child(2),
+.icon.plano_e:nth-child(2) {
+  animation-duration: 32s;
+  height: 35%;
+}
+
+/* grupo 3 */
+.icon:nth-child(3) {
+  z-index: 1;
+  animation-delay: -80s;
+  top: -50%;
+  font-size: 40px;
+}
+
+.icon.plano_a:nth-child(3),
+.icon.plano_b:nth-child(3),
+.icon.plano_c:nth-child(3),
+.icon.plano_d:nth-child(3),
+.icon.plano_e:nth-child(3) {
+  animation-duration: 34s;
+  height: 35%;
+}
+
+/* grupo 4 */
+.icon:nth-child(4) {
+  animation-delay: -31s;
+  top: -80%;
+  font-size: 40px;
+}
+
+.icon.plano_a:nth-child(4),
+.icon.plano_b:nth-child(4),
+.icon.plano_c:nth-child(4),
+.icon.plano_d:nth-child(4),
+.icon.plano_e:nth-child(4) {
+  animation-duration: 36s;
+  height: 35%;
+
+}
+
+/* grupo 5 */
+.icon:nth-child(5) {
+  animation-delay: -100s;
+  top: -100%;
+  font-size: 40px;
+}
+
+.icon.plano_a:nth-child(5),
+.icon.plano_b:nth-child(5),
+.icon.plano_c:nth-child(5),
+.icon.plano_d:nth-child(5),
+.icon.plano_e:nth-child(5) {
+  animation-duration: 38s;
+  height: 35%;
+}
+
+/* grupo 6 */
+.icon:nth-child(6) {
+  animation-delay: -67s;
+  top: -145%;
+  font-size: 25px;
+}
+
+.icon.plano_a:nth-child(6),
+.icon.plano_b:nth-child(6),
+.icon.plano_c:nth-child(6),
+.icon.plano_d:nth-child(6),
+.icon.plano_e:nth-child(6) {
+  animation-duration: 52s;
+  height: 35%;
+}
+
+/* grupo 7 */
+.icon:nth-child(7) {
+  z-index: 1;
+  animation-delay: -35s;
+  top: -180%;
+  font-size: 30px;
+}
+
+.icon.plano_a:nth-child(7),
+.icon.plano_b:nth-child(7),
+.icon.plano_c:nth-child(7),
+.icon.plano_d:nth-child(7),
+.icon.plano_e:nth-child(7) {
+  animation-duration: 54s;
+  height: 35%;
+}
+
+/* grupo 8 */
+.icon:nth-child(8) {
+  animation-delay: -50s;
+  top: -241%;
+  font-size: 30px;
+}
+
+.icon.plano_a:nth-child(8),
+.icon.plano_b:nth-child(8),
+.icon.plano_c:nth-child(8),
+.icon.plano_d:nth-child(8),
+.icon.plano_e:nth-child(8) {
+  animation-duration: 56s;
+  height: 35%;
+}
+
+/* grupo 9 */
+.icon:nth-child(9) {
+  animation-delay: -22s;
+  top: -267%;
+  font-size: 30px;
+}
+
+.icon.plano_a:nth-child(9),
+.icon.plano_b:nth-child(9),
+.icon.plano_c:nth-child(9),
+.icon.plano_d:nth-child(9),
+.icon.plano_e:nth-child(9) {
+  animation-duration: 58s;
+  height: 35%;
+}
+
+/* grupo 10 */
+.icon:nth-child(10) {
+  animation-delay: -40s;
+  top: -299%;
+  font-size: 30px;
+}
+
+.icon.plano_a:nth-child(10),
+.icon.plano_b:nth-child(10),
+.icon.plano_c:nth-child(10),
+.icon.plano_d:nth-child(10),
+.icon.plano_e:nth-child(10) {
+  animation-duration: 60s;
+  height: 35%;
+}
+
+/* grupo 11 */
+.icon:nth-child(11) {
+  animation-delay: -91s;
+  top: -340%;
+  font-size: 20px;
+}
+
+.icon.plano_a:nth-child(11),
+.icon.plano_b:nth-child(11),
+.icon.plano_c:nth-child(11),
+.icon.plano_d:nth-child(11),
+.icon.plano_e:nth-child(11) {
+  animation-duration: 70s;
+  height: 35%;
+}
+
+/* grupo 12 */
+.icon:nth-child(12) {
+  animation-delay: -60s;
+  top: -360%;
+  font-size: 20px;
+
+}
+
+.icon.plano_a:nth-child(12),
+.icon.plano_b:nth-child(12),
+.icon.plano_c:nth-child(12),
+.icon.plano_d:nth-child(12),
+.icon.plano_e:nth-child(12) {
+  animation-duration: 72s;
+  height: 35%;
+}
+
+/* grupo 13 */
+.icon:nth-child(13) {
+  animation-delay: -64s;
+  top: -420%;
+  font-size: 20px;
+
+}
+
+.icon.plano_a:nth-child(13),
+.icon.plano_b:nth-child(13),
+.icon.plano_c:nth-child(13),
+.icon.plano_d:nth-child(13),
+.icon.plano_e:nth-child(13) {
+  animation-duration: 74s;
+  height: 35%;
+}
+
+/* grupo 14 */
+.icon:nth-child(14) {
+  z-index: 1;
+  animation-delay: -49s;
+  top: -433%;
+  font-size: 20px;
+}
+
+.icon.plano_a:nth-child(14),
+.icon.plano_b:nth-child(14),
+.icon.plano_c:nth-child(14),
+.icon.plano_d:nth-child(14),
+.icon.plano_e:nth-child(14) {
+  animation-duration: 76s;
+  height: 35%;
+}
+
+/* grupo 15 */
+.icon:nth-child(15) {
+  animation-delay: -44s;
+  top: -485%;
+  font-size: 20px;
+}
+
+.icon.plano_a:nth-child(15),
+.icon.plano_b:nth-child(15),
+.icon.plano_c:nth-child(15),
+.icon.plano_d:nth-child(15),
+.icon.plano_e:nth-child(15) {
+  animation-duration: 78s;
+  height: 35%;
+}
+
+/* grupo 16 */
+.icon:nth-child(16) {
+  animation-delay: -70s;
+  top: -464%;
+  font-size: 15px;
+}
+
+.icon.plano_a:nth-child(16),
+.icon.plano_b:nth-child(16),
+.icon.plano_c:nth-child(16),
+.icon.plano_d:nth-child(16),
+.icon.plano_e:nth-child(16) {
+  animation-duration: 80s;
+  height: 35%;
+}
+
+/* grupo 17 */
+
+.icon:nth-child(17) {
+  animation-delay: -48s;
+  top: -508%;
+  font-size: 15px;
+}
+
+.icon.plano_a:nth-child(17),
+.icon.plano_b:nth-child(17),
+.icon.plano_c:nth-child(17),
+.icon.plano_d:nth-child(17),
+.icon.plano_e:nth-child(17) {
+  animation-duration: 82s;
+  height: 35%;
+}
+
+/* grupo 18 */
+.icon:nth-child(18) {
+  animation-delay: -3s;
+  top: -574%;
+  font-size: 15px;
+}
+
+.icon.plano_a:nth-child(18),
+.icon.plano_b:nth-child(18),
+.icon.plano_c:nth-child(18),
+.icon.plano_d:nth-child(18),
+.icon.plano_e:nth-child(18) {
+  animation-duration: 84s;
+  height: 35%;
+}
+
+/* grupo 19 */
+.icon:nth-child(19) {
+  animation-delay: -10s;
+  top: -576%;
+  font-size: 15px;
+}
+
+.icon.plano_a:nth-child(19),
+.icon.plano_b:nth-child(19),
+.icon.plano_c:nth-child(19),
+.icon.plano_d:nth-child(19),
+.icon.plano_e:nth-child(19) {
+  animation-duration: 86s;
+  height: 35%;
+
+}
+
+/* grupo 20 */
+.icon:nth-child(20) {
+  z-index: 0;
+  animation-delay: -40s;
+  top: -634%;
+  font-size: 20px;
+}
+
+.icon.plano_a:nth-child(20),
+.icon.plano_b:nth-child(20),
+.icon.plano_c:nth-child(20),
+.icon.plano_d:nth-child(20),
+.icon.plano_e:nth-child(20) {
+  animation-duration: 88s;
+  height: 35%;
+}

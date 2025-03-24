@@ -1,9 +1,6 @@
 #speakers .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
-  }
-
-#speakers .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

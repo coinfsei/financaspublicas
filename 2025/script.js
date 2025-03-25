@@ -5,13 +5,22 @@ $(document).ready(function () {
     if (this.hash !== "" && !$(this).attr("data-toggle")) {
       event.preventDefault();
       var hash = this.hash;
+
+      // Ajustar o deslocamento para considerar a altura da navbar
+      var offset = $(hash).offset().top - $(".navbar").outerHeight();
+
       $("html, body").animate(
         {
-          scrollTop: $(hash).offset().top,
+          scrollTop: offset,
         },
         350,
         function () {
-          window.location.hash = hash;
+          // Atualizar o hash na URL sem causar scroll adicional
+          if (history.pushState) {
+            history.pushState(null, null, hash);
+          } else {
+            window.location.hash = hash;
+          }
         }
       );
 
@@ -40,8 +49,8 @@ $(document).ready(function () {
     $("#previousVersionsModal").modal("show");
   });
 
-  // Activate scrollspy
-  $("body").scrollspy({ target: ".navbar", offset: 90 });
+  // Activate scrollspy with correct offset
+  $("body").scrollspy({ target: ".navbar", offset: $(".navbar").outerHeight() + 10 });
 
   // Prevent scrolling when clicking on tab links
   $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
@@ -66,7 +75,6 @@ $(document).ready(function () {
       $("#botao-inscricao").fadeIn();
       $("#botao-submissao").fadeIn();
       $("#botao-compartilhar").fadeIn();
-      $("").fadeIn();
     } else {
       $("#botao-inscricao").fadeOut();
       $("#botao-submissao").fadeOut();

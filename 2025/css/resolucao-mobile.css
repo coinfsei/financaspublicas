@@ -2,14 +2,15 @@
 @media (max-width: 767px) {
 
     #icons {
+        z-index: 2;
         position: absolute;
-        top: -16%;
+        top: 48%;
         right: 0;
         bottom: 0;
         left: 0;
         margin: auto;
-        height: 37%;
-        width: 140%;
+        height: 49%;
+        width: 120%;
         overflow: hidden;
         animation: FadeIn 3.1s ease-out;
         user-select: none;
@@ -19,7 +20,6 @@
     .ilustracao {
         margin: -20px 110px 30px 130px;
         width: 360px;
-        z-index: 1;
         position: relative;
         /* Add this line */
     }

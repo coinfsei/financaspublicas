@@ -1,10 +1,42 @@
 #home {
-  background: linear-gradient(-75deg, #ccb92c, #1cb378);
+  background: linear-gradient(-75deg, #ccb92c, #1cb378),
+    url(../imgs/banner_pc_ft-100.jpg);
+  background-size: cover, cover;
   background-repeat: no-repeat;
   justify-content: center;
-  /* padding: 0px 300px 0px 300px; */
   flex-wrap: wrap;
+  position: relative;
   animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../imgs/banner_pc_ft-100.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: color-burn;
+  opacity: 0.4;
+  /* Ajuste a opacidade aqui */
+  z-index: 1;
 }
 
 .ilustracao {
@@ -36,29 +68,6 @@
   order: 0;
   flex-wrap: wrap;
 
-}
-
-.background {
-  background-image: url(../imgs/banner_pc_ft-100.jpg);
-  mix-blend-mode: color-burn;
-  background-repeat: no-repeat;
-  justify-content: center;
-  /* padding: 0px 300px 0px 300px; */
-  flex-wrap: wrap;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .hero {

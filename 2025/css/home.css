@@ -1,9 +1,10 @@
 #home {
-  background-image: url(../imgs/banner_pc_ft-100.jpg);
+  background: linear-gradient(-75deg, #ccb92c, #1cb378);
   background-repeat: no-repeat;
   justify-content: center;
   /* padding: 0px 300px 0px 300px; */
   flex-wrap: wrap;
+  animation: gradient 15s ease infinite;
 }
 
 .ilustracao {
@@ -34,10 +35,16 @@
   z-index: 1;
   order: 0;
   flex-wrap: wrap;
-  background: linear-gradient(-90deg, #179d59, #179d8a, #2dadb3, #1cb378);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  overflow: hidden;
+
+}
+
+.background {
+  background-image: url(../imgs/banner_pc_ft-100.jpg);
+  mix-blend-mode: color-burn;
+  background-repeat: no-repeat;
+  justify-content: center;
+  /* padding: 0px 300px 0px 300px; */
+  flex-wrap: wrap;
 }
 
 @keyframes gradient {
@@ -111,6 +118,7 @@
 
 @media (min-width: 768px) {
   .banner {
+    height: 440px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,16 +168,4 @@
     color: #ffc107;
     font-size: 25px;
   }
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1920px;
-  height: 1080px;
-  z-index: 0;
-  opacity: 0.2;
-  mix-blend-mode: color-burn;
-  overflow: hidden;
 }

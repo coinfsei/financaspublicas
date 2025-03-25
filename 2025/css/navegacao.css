@@ -10,6 +10,7 @@
 /* Define the background color with transparency */
 .navbar {
     background-color: rgba(0, 0, 0, 0.9) !important;
+	max-width: 100vw;
     /* Preto com 80% de opacidade */
 }
 
@@ -32,6 +33,10 @@
 
 .navbar-nav-custom{
     gap: .5rem;
+}
+
+.nav-item {
+	text-align: center;
 }
 
 #navbarNav {

@@ -35,6 +35,10 @@
     gap: .5rem;
 }
 
+.nav-item {
+	text-align: center;
+}
+
 #navbarNav {
     justify-content: flex-end;
 }

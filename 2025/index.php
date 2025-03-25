@@ -4,7 +4,6 @@
 <head>
 	<!-- Head -->
     <?php include('./snippets/head.html') ?>
-    
 
 </head>
 

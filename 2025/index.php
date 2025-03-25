@@ -32,7 +32,7 @@
     <?php include('./snippets/palestrantes.html'); ?>
 
     <!-- Sessão dos Patrocinadores -->
-    <?php //include('./snippets/patrocinio.html'); ?>
+    <?php include('./snippets/patrocinio.html'); ?>
 
     <!-- Modal de Versões Anteriores -->
     <?php //include('./snippets/botao-flutuante.html'); ?>

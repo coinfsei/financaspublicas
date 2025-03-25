@@ -11,13 +11,13 @@
 #dia2-tab {
   box-shadow: unset;
   border-radius: 5px 5px 0px 0px;
-  color: white;
-  background: linear-gradient(45deg, #337dcc, #4fa6e0);
+  color: #f1f1db;
+  background: #1cb378;
 }
 
 #tabhead {
-  color: white;
-  background: linear-gradient(45deg, #337dcc, #4fa6e0);
+  color: #f1f1db;
+  background: linear-gradient(145deg, #1cb378, #1cb378, #1cb378, #ccb92c);
 }
 
 #dia2-tab:not(.active),
@@ -28,6 +28,6 @@
 }
 
 #tabsections {
-  color: #633f18;
-  background: linear-gradient(135deg, #f38f32, #ffb563);
+  color: #f1f1db;
+  background: linear-gradient(135deg, #3461ad, #44419b);
 }

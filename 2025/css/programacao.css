@@ -61,3 +61,13 @@
 	padding-left: 0.42rem;
 }
 }
+
+@media (max-width: 378px) {
+#programacaoContent th{
+	font-size: 0.64rem;
+}
+#programacaoContent td{
+	padding-left: 0.35rem;
+	padding-right: 0.35rem;
+}
+}

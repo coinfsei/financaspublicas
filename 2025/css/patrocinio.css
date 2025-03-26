@@ -16,6 +16,7 @@
 .row-patrocinio img {
     height: auto;
     object-fit: contain;
+	max-width: 500px;
 }
 
 .img-fluid {
@@ -54,11 +55,20 @@
 	max-width: 95vw;
 	flex-direction: column;
 }
+
+.row-patrocinio img {
+    height: auto;
+	width: 99%;
+    object-fit: contain;
+}
+
+
 }
 
 @media (max-width: 512px) {
 .row-patrocinio {
 	width: 300px;
 	min-width: 50vw;
+}
 
 }

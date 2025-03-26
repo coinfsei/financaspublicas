@@ -31,3 +31,33 @@
   color: #f1f1db;
   background: linear-gradient(135deg, #3461ad, #44419b);
 }
+
+@media (max-width: 402px) {
+#programacaoContent th{
+	padding-left: 20 10 20 10;
+	font-size: 0.7rem;
+}
+#programacaoContent td{
+	padding-left: 0.6rem;
+	
+}
+}
+
+@media (max-width: 385px) {
+#programacaoContent th{
+	padding: 18 2 18 2;
+	font-size: 0.65rem;
+}
+#programacaoContent td{
+	padding-left: 0.5rem;
+}
+}
+
+@media (max-width: 378px) {
+#programacaoContent th{
+	padding: 16 0 16 0;
+}
+#programacaoContent td{
+	padding-left: 0.42rem;
+}
+}

@@ -166,15 +166,15 @@
 
   .marca {
     display: inline-block;
-    margin: 7.29vw 5.21vw 5.21vw 5.21vw;
+    margin: 7.29vw 1.21vw 5.21vw 7.21vw;
     width: 480px;
     justify-content: space-around;
   }
 
   .ilustracao {
     display: inline-block;
-    margin: 7.29vw 5.21vw 5.21vw 5.21vw;
-    width: 410px;
+    margin: 5.29vw 1.21vw 2.21vw 1.21vw;
+    width: 750px;
     justify-content: space-around;
   }
 
